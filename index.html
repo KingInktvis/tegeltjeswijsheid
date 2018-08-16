@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+    <script src="draw.js"></script>
+</head>
+<body onload="draw()">
+<div>
+    <canvas width="299" height="300" id="tegel">
+        Your web browser is not supported.
+    </canvas>
+</div>
+<form>
+    quote: <input type="text" id="quote" oninput="draw()"/><br/>
+    author: <input type="text" id="author" oninput="draw()"/><br/>
+    Year: <input type="number" id="year" oninput="draw()"/><br/>
+</form>
+</body>
+</html>
