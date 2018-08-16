@@ -48,7 +48,7 @@ function draw() {
         const text = author.value + ' ' + year.value;
         console.log(text);
         ctx.fillText(text, 150, y);
-
+        set_download();
     };
     img.src = 'tegeltje.jpg';
 }
@@ -68,6 +68,9 @@ function circle_slice(circle, height) {
     return 2 * Math.sqrt(r2 - y2);
 }
 
-function x_circle(circle, height) {
-
+function set_download() {
+    const download = document.getElementById('download');
+    const canvas = document.getElementById('tegel');
+    const img = canvas.toDataURL("image/png");
+    download.href = img;
 }
