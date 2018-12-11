@@ -19,7 +19,7 @@ function draw() {
     img.onload = () => {
         ctx.drawImage(img, 0, 0);
         ctx.textAlign = 'center';
-        ctx.font = 'italic 30px serif';
+        ctx.font = '30px Lobster';
 
         let start = 0;
         let next = 0;
